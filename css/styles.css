@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header Style */
+.header {
+  /* Set the background color to black and text color to white with a lighter font weight and smaller font size */
+  background: black;
+  color: #fff;
+  font-weight: 200;
+  font-size: 0.75em;
+}
+
+.header ul {
+  /* Use flexbox for layout and distribute space between items */
+  display: flex;
+  justify-content: space-between; /* Modern browsers */
+}
+
+.content {
+  /* Set a fixed width, add padding, and center the content */
+  width: 980px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header .navigation ul li a {
+  /* Remove underline from links and set the text color to white */
+  text-decoration: none;
+  color: #fff;
+}
+
+.header ul {
+  /* Remove default list styling */
+  list-style: none;
+}
+.header .navigation ul li {
+  /* Display list items inline, add padding and height, and set initial opacity */
+  display: inline-block;
+  padding: 14px 0 8px;
+  height: 25px;
+  opacity: 0.8;
+}
+
+.header .navigation ul li:hover {
+  /* Increase opacity when hovering over list items */
+  opacity: 1;
+}
+
+.logo-link,
+.search-link,
+.cart-link {
+  /* Set a fixed width and make the elements block-level */
+  width: 18px;
+  display: block;
+}
+
+.header .navigation ul li.logo-link {
+  /* Add specific padding for the logo link */
+  padding: 12px 0 10px;
+}
+
+.header .navigation ul li.search-link {
+  /* Add specific padding for the search link */
+  padding: 14px 0 8px;
+}
+
+.header .navigation ul li.cart-link {
+  /* Add specific padding for the cart link */
+  padding: 12px 0 10px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  font-size: 0.65em;
+  padding-top: 30px;
+}
+
+.footer-content {
+  /* Set a fixed width, add padding, and center the content */
+  width: 980px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.text1 {
+  border-bottom: 1px solid #d2d2d7;
+  color: #86868b;
+  padding: 17px 0 20px;
+}
+.text1 a {
+  text-decoration: none;
+  color: #86868b;
+}
+.text1 a:hover {
+  text-decoration: underline; /* Underline the text when the link is hovered over */
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between; /* Modern browsers */
+  padding-top: 20px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding-bottom: 20px;
+}
+.footer-nav ul li {
+  padding: 5px 0;
+  font-size: 0.9em;
+}
+.footer-nav a {
+  color: #515154;
+  text-decoration: none;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+.footer-nav h3 {
+  font-size: 12px;
+  font-weight: 600;
+}
+.additional-shopping {
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 20px;
+}
+.legal-links ul li {
+  display: inline-block;
+  padding: 0 5px;
+  border-right: 1px solid #ccc;
+}
+/* Style for the last list item in unordered lists within the "legal-links" class */
+.legal-links ul li:last-child {
+  /* Remove the right border from the last list item */
+  border-right: 0px;
+}
+
+.legal-links ul li a {
+  /* Remove the underline from the link text */
+  text-decoration: none;
+  /* Set the text color to a dark gray */
+  color: #515154;
+}
+
+/* Style for links within list items in the "legal-links" class when hovered */
+.legal-links ul li a:hover {
+  /* Underline the link text when hovered */
+  text-decoration: underline;
+}
+
+/* Style for the "footer-country" class */
+.footer-country {
+  /* Display elements inline, allowing them to sit next to each other */
+  display: inline-block;
+}
+
+.country-flag {
+  /* Display elements inline, allowing them to sit next to each other */
+  display: inline-block;
+  /* Align the middle of the element with the middle of the line height of the parent element */
+  vertical-align: middle;
+}
+
+.country-name {
+  /* Display elements inline, allowing them to sit next to each other */
+  display: inline-block;
+  /* Align the top of the element with the top of the line height of the parent element */
+}
+
+/* Main Highlight */
+.main-highlight {
+  background: #fafafa;
+  text-align: center;
+  padding: 25px 0;
+}
+.links ul {
+  list-style: none;
+}
+.model-name {
+  font-size: 0.85em;
+}
+.product-name {
+  font-weight: 700;
+  font-size: 56px;
+}
+.description {
+  font-size: 2em;
+}
+.links {
+  padding: 15px 0;
+}
+.links ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+.links ul li a {
+  color: #06c;
+  text-decoration: none;
+}
+/* Changes the color of the links to black when hovered over */
+.links ul li a:hover {
+  color: #000; /* Sets the text color to black (#000) on hover */
+}
+
+.links ul li a:after {
+  font-weight: 600;
+  font-family: "FontAwesome";
+  content: "\f105";
+  padding-left: 10px;
+}
+
+/* highlight-iphone11-pro Section */
+
+.highlight-iphone11-pro {
+  background-image: url("../images/home/iphone11-pro-bg.jpg");
+  height: 580px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 65px 20px;
+  color: #fff;
+}
+.title {
+  font-weight: 600;
+  font-size: 56px;
+}
+.description {
+  font-size: 26px;
+  padding: 10px 0;
+}
+.price {
+  color: #86868b;
+  font-size: 0.85em;
+}
+
+/* highlight highlight-iphone11 */
+.highlight-iphone11 {
+  background-image: url("../images/home/iphone11-bg.jpg");
+  height: 580px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 65px 20px;
+}
+
+/*highlight highlight-watch-series5 */
+.highlight-watch-series5 {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+.left {
+  height: 580px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 48.5%;
+  margin: 1% 0.5% 0% 1%;
+  padding-top: 54px;
+}
+
+.highlight-watch-series5 .left {
+  background-image: url("../images/home/watch-series-5.jpg");
+}
+.right {
+  height: 580px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 48.5%;
+  margin: 1% 1% 0% 0.5%;
+  padding-top: 54px;
+}
+.highlight-watch-series5 .right {
+  background-image: url("../images/home/apple-card.jpg");
+}
+.description {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 10px;
+}
+/* TV and AirPod Section */
+.tv-AirPod {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+.tv-AirPod.left {
+  height: 580px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 48.5%;
+  margin: 1% 0.5% 0% 1%;
+  padding-top: 54px;
+}
+
+.tv-AirPod .left {
+  background-image: url(../images/home/apple-tv-background.jpg);
+}
+
+.tv-AirPod .right {
+  background-image: url(../images/home/air-pods.jpg);
+  color: #fff;
+  background-size: initial;
+  background-color: #000;
+  background-position: bottom;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.tvshow-logo {
+  padding: 180px 0 200px;
+}
+
+/* Watch more link styling */
+.watch-more a {
+  text-decoration: none;
+  font-size: 0.85em;
+}
+
+/* Watch more icon */
+.watch-more a:after {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: "\f144";
+  padding-left: 15px;
+}
+
+/*Sixth Highlight Section */
+.MacBookPro-iPad {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  /* background: #fff; */
+}
+.MacBookPro-iPad .left {
+  background-image: url(../images/home/macbook-pro.jpg);
+  background-size: initial;
+  background-color: #fafafa;
+  background-position: bottom;
+} /* 
+paddingun check margegn new yekerew */
+.MacBookPro-iPad .right {
+  background-image: url(../images/home/new-ipad.jpg);
+  background-size: initial;
+  background-position: bottom;
+ height: 580px;
+ background-color: #fafafa;
+
+}
+.product-title {
+  font-weight: 700;
+  font-size: 45px;
+}
